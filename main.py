@@ -16,7 +16,7 @@ import types
 from manim import *
 from manim_slides import ThreeDSlide   # ThreeDSlide is a superset of Slide
 
-from sections import s1_intro, s2_equality, s3_algebra, s4_scalar
+from sections import s0_title, s1_intro, s2_equality, s3_algebra, s4_scalar
 
 
 # ---------------------------------------------------------------------------
@@ -60,6 +60,9 @@ class CompleteVectorLecture(ThreeDSlide):
     """Plays every section in chronological order as one continuous presentation."""
 
     def construct(self) -> None:
+        # ── 0. Title Slide ──────────────────────────────────────────────────
+        _run_section(self, s0_title.TitleSlide)
+
         # ── 1. Introduction to Vectors ──────────────────────────────────────
         _run_section(self, s1_intro.SegmentoRecta)
         _run_section(self, s1_intro.VectorOrigenExtremo)
