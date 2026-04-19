@@ -27,10 +27,6 @@ class TitleSlide(Slide):
             axis_config={"stroke_color": C_AX, "stroke_opacity": 0.3},
         )
         self.add(plane)
-        # --- THE FIX: ADD THIS LINE HERE ---
-        self.next_slide() 
-        # Now the page will load the grid and WAIT for a click to continue.
-        # ------------------------------------        
         # --- 2. Main Title (Lecture Name) ---
         # PLACEHOLDER: Edit this string manually
         title_text = "Vectores" 
