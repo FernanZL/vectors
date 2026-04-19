@@ -1,0 +1,1041 @@
+\section{Vectores}
+
+\subsection{Vectores en el plano y en el espacio tridimensional}
+
+Dos puntos $a$ y $b$ que pertenecen a una recta $R$ determinan un segmento denotado por $\overline{ab}$, como se muestra en la siguiente figura:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig1.png}
+    \caption{}
+    \label{fig:4.1}
+\end{figure}
+
+Si esos dos puntos se dan con un cierto orden, queda determinado un \Emph{vector}. El primer punto dado, $a$, se llama \Emph{origen} del vector o \Emph{punto de aplicación}, y el segundo, $b$, se denomina \Emph{extremo}. Se llama \Emph{vector geométrico} a todo \emph{segmento orientado}. Además, al vector geométrico de origen $a$ y extremo $b$, lo podemos escribir como $\vec{ab}$, aunque otros autores los denotan simplemente como $\mathbf{ab}$ (en negrita). Geométricamente se lo representa de la siguiente manera:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig2.png}
+    \caption{}
+    \label{fig:4.2}
+\end{figure}
+%El vector puede escribirse en función de sus \Emph{componentes}, como veremos más adelante, haciendo uso de pares ordenados (o ternas ordenadas en el caso del espacio tridimensional). Por ejemplo, un vector $\vv$ que tenga 2 componentes, $x$ e $y$, se puede escribir como $\vv = (x,y)$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Características}
+
+Un vector queda siempre determinado por su:
+\begin{itemize}
+    \item \Emph{Dirección:} La dirección del vector está determinada por la recta $R$ que lo contiene (llamada recta soporte) o la dirección de sus paralelas.
+
+    \item \Emph{Sentido:} El sentido del vector $\vec{ab}$ está determinado por el orden de los puntos $a$ y $b$, origen y extremo. Y lo indicamos mediante una punta de flecha situada en un extremo, que muestra hacia qué lado de la \Emph{línea de acción} (recta soporte) se dirige el vector.
+
+    \item \Emph{Módulo:} El módulo (o también norma) de un vector es la \Emph{longitud} del vector. Para conocer el módulo de un vector es preciso conocer el origen y el extremo del mismo, porque debemos medir desde su origen hasta su extremo. En el vector $\vec{ab}$ el módulo es la longitud del segmento $\overline{ab}$. Al módulo del vector $\vec{ab}$ lo simbolizamos: $|\vec{ab}|$.
+\end{itemize}
+Se puede ver en la siguiente figura las características recién descritas:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig3.png}
+    \caption{}
+    \label{fig:4.3}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Módulo de un vector}
+
+A partir del conocimiento del módulo, podemos definir:
+\begin{itemize}
+    \item \Emph{Vector Nulo o Cero:} es aquel vector cuyo módulo es cero y \Emph{no} tiene dirección. Lo denotamos como $\vec{0}$ ($\mathbf{0}$). Simbólicamente se escribe $|\vec{0}| = 0$.
+
+    \item \Emph{Versor o Vector Unitario:} es todo vector $\vec{v_0}$ cuyo módulo es exactamente igual a uno. Es decir: $|\vec{v_0}| = 1$.
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Componentes de un vector}
+
+Introduciendo un \Emph{sistema de coordenadas cartesianas rectangulares}, podemos trabajar con vectores en el plano, que lo denotaremos  $\RR^2=\{(x,y)\ /\ x,y \in\RR\}$ (dos dimensiones) o bien, en el espacio, es decir $\RR^3=\{(x,y,z)\ /\ x,y,z\in\RR\}$ (tres dimensiones). Para hacer referencia simultánea de ambos conjuntos utilizaremos la notación $\VV$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{En el plano $\RR^2$}
+
+Para describir un vector analíticamente en el plano, consideramos un vector con  origen en el origen de coordenadas $\bigO=(0,0)$ y como extremo un punto $P(x_1,y_1)$, es decir $\vv = \vec{OP} =(x_1,y_1)$. Los números $x_1$, $y_1$ se denominan las \Emph{componentes del vector} $\vv$. En general, cualquier vector en el espacio bidimensional puede identificarse con las coordenadas de su extremo. Gráficamente:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\linewidth]{Imagenes/U4/fig4.png}
+    \caption{}
+    \label{fig:4.4}
+\end{figure}
+En el siguiente gráfico, podemos ver que el vector $\vec{\bigO a}$ tiene componentes 4 y 3, respectivamente, por lo que su notación en función de sus componentes es: $\vec{\bigO a} = (4,3)$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\linewidth]{Imagenes/U4/fig5.png}
+    \caption{}
+    \label{fig:4.5}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{En el espacio $\RR^3$}
+
+Análogamente, un vector en $\RR^3$, es decir, el espacio tridimensional, puede expresarse en función de 3 componentes ortogonales entre sí $x_1,y_1,z_1$ (\figura{4.6}). Entonces, resulta que $\vv = \vec{\bigO P} = (x_1, y_1, z_1)$. Un ejemplo numérico (\figura{4.7}) es el vector $\vec{a} = \vec{\bigO P} = (3,3,2)$.
+
+\noindent
+\begin{minipage}[t]{0.49\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{Imagenes/U4/fig6.png}
+        \caption{}
+        \label{fig:4.6}
+    \end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{Imagenes/U4/fig7.png}
+        \caption{}
+        \label{fig:4.7}
+    \end{figure}
+\end{minipage}
+\vspace{0.2cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{Módulo o norma de un vector en función de sus componentes}
+% rever una introduccion a la escritura del vector en funcion de sus componentes
+
+A partir de lo expuesto hasta el momento, veremos cómo calcular el módulo de un vector conociendo sus componentes:
+
+\begin{itemize}
+    \item \Emph{En $\RR^2$:}
+    
+    \begin{minipage}[c]{0.55\textwidth}
+        \vspace{-1cm}
+        Dado el vector $\vv = \vec{op}$, $|\vv|$ es la hipotenusa del triángulo rectángulo, donde $x_1$ e $y_1$ son los catetos. Por el Teorema de Pitágoras, podemos expresar:
+            \begin{equation*}
+                |\vv|^2 = x_1^2 + y_1^2 \iff |\vv| = +\sqrt{x_1^2 + y_1^2}
+            \end{equation*}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.4\textwidth}
+        \vspace{-1cm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\linewidth]{Imagenes/U4/fig8.png}
+            \caption{}
+            \label{fig:4.8}
+        \end{figure}
+    \end{minipage}
+
+    \item \Emph{En $\RR^3$:}
+
+    
+    \begin{minipage}[c]{0.4\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\linewidth]{Imagenes/U4/fig9.png}
+            \caption{}
+            \label{fig:4.9}
+        \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.55\textwidth}
+        Por el Teorema de Pitágoras, la diagonal $\overline{\bigO Q}$ verifica que: $\overline{\bigO Q}^2 = x_1^2 + y_1^2$.
+
+        Luego, para hallar el módulo de $\vv$, aplicamos nuevamente Pitágoras, entonces:
+            \begin{align*}
+                |\vv|^2 = \overline{\bigO Q}^2 + \overline{QP}^2 &\iff |\vv|^2 = x_1^2 + y_1^2 + z_1^2 \iff \\
+                &\iff|\vv| = +\sqrt{x_1^2 + y_1^2 + z_1^2}
+            \end{align*}
+    \end{minipage}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Igualdad de vectores}
+
+\Emph{Vector libre:} es el vector que puede trasladarse sin modificar su módulo, dirección y sentido.
+
+\begin{definitionbox}{Igualdad de Vectores}{4.1}
+    Dos vectores libres son iguales si tienen igual dirección, sentido y módulo. Los vectores iguales se llaman también \Emph{vectores equipolentes}.
+\end{definitionbox}
+En el siguiente gráfico se muestra que los vectores $\vv,\ \vec{w},$ y $\vec{z}$ (\figura{4.10}) son equipolentes entre sí, y $\vec{a}$ es equipolente a $\vec{b}$ (\figura{4.11}).
+
+\noindent
+\begin{minipage}[b]{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig10.png}
+        \caption{}
+        \label{fig:4.10}
+    \end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig11.png}
+        \caption{}
+        \label{fig:4.11}
+    \end{figure}
+\end{minipage}
+
+\subsubsection*{Igualdad de vectores en función de sus componentes}
+
+Dos vectores de $\VV$ son iguales si se verifica la igualdad de sus respectivas componentes.
+\begin{itemize}
+    \item \Emph{En $\RR^2$:} Sean $\vu = (x_1,y_1),\ \vv = (x_2,y_2)$ dos vectores en el plano. Resulta que:
+        \begin{equation*}
+            \vu = \vv \iff x_1 = x_2\ \land\ y_1 = y_2
+        \end{equation*}
+
+    \item \Emph{En $\RR^3$:} Sean $\vu = (x_1,y_1,z_1),\ \vv = (x_2,y_2,z_2)$ dos vectores en el plano. Resulta que:
+        \begin{equation*}
+            \vu = \vv \iff x_1 = x_2\ \land\ y_1 = y_2\ \land\ z_1 = z_2
+        \end{equation*}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{Vectores opuestos}
+
+Un vector $\vv$ y otro $-\vv$ se llaman vectores opuestos si tienen igual dirección y módulo, pero tienen sentidos contrarios. Por lo tanto, los vectores opuestos \Emph{no} son equipolentes.
+
+Si $\vv = (x_1, y_1)\in\RR^2$, se define su opuesto como $-\vv = (-x_1, -y_1)$. De manera análoga se lo puede definir en $\RR^3$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{preguntabox}[Ejercicio 1:]
+    Considerar el vector $\vv = (-4,2)$ y hallar las componentes de otros tres vectores que tengan:
+        \begin{enumerate}[label=(\alph*)]
+            \item La misma dirección que $\vv$ y el mismo sentido.
+
+            \item La misma dirección que $\vv$ y el sentido opuesto.
+
+            \item El mismo módulo que $\vv$.
+        \end{enumerate}
+\end{preguntabox}
+
+
+\begin{preguntabox}[Ejercicio 2:]
+    Considerar la igualdad: $|\vec{a} + \vec{b}| = |\vec{a}| + |\vec{b}|$. Encontrar dos vectores que verifiquen la igualdad y dos vectores que no.
+\end{preguntabox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Versores fundamentales en $\RR^2$ y $\RR^3$}
+
+% pendiente
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Álgebra vectorial}
+
+Los vectores operan de distintas maneras entre sí y con elementos de otros conjuntos. En este curso estudiaremos:
+\begin{itemize}
+    \item La suma entre vectores.
+
+    \item La diferencia entre vectores.
+
+    \item El producto de un vector por un escalar.
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Suma y diferencia de vectores}
+
+\subsubsection*{Suma de vectores}
+
+La suma de dos vectores libres $\vu$ y $\vv$ es otro vector obtenido de la siguiente manera: $\vu + \vv$. El protocolo para sumar vectores es el siguiente:
+\begin{enumerate}
+    \item Trasladamos el vector $\vv$ a continuación de $\vu$, haciendo coincidir el origen de $\vv$ con el extremo de $\vu$.
+
+    \item El origen de la suma $\vu + \vv$ es el origen de $\vu$.
+
+    \item El extremo de la suma $\vu + \vv$ es el extremo de $\vv$.
+\end{enumerate}
+Es decir, el vector $\vu + \vv$ va desde el origen de $\vu$ hasta el extremo de $\vv$. Gráficamente esto se ve así:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig12.png}
+    \caption{}
+    \label{fig:4.12}
+\end{figure}
+Las propiedades que cumplen la suma de vectores la veremos más adelante, pero adelantaremos dos para construir la suma de dos o más vectores:
+\begin{enumerate}
+    \item La suma de vectores es \Emph{asociativa}: $\forall\ \vec{a}, \vec{b}, \vec{c} \in\VV: \vec{a} + (\vec{b} + \vec{c}) = (\vec{a} + \vec{b}) + \vec{c}$
+
+    \item La suma de vectores es \Emph{conmutativa}: $\forall\ \vec{a}, \vec{b} \in\VV: \vec{a} + \vec{b} = \vec{b} + \vec{a}$
+\end{enumerate}
+
+Estas propiedades facilitan la realización de la suma de dos o más vectores. La propiedad conmutativa permite la utilización de la regla del paralelogramo y la asociativa la posibilidad de sumar de a dos cuando tenemos dos o más vectores.
+
+Además, si sumamos un vector libre $\vv$ con su opuesto $-\vv$, obtenemos un vector reducido a un punto (su origen y extremo coinciden), se trata del \Emph{vector nulo}. Simbólicamente: $\vv + (-\vv) = \vec{0}$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.17\linewidth]{Imagenes/U4/fig13.png}
+    \caption{}
+    \label{fig:4.13}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{Regla del paralelogramo}
+
+Se usa cuando necesitamos sumar dos vectores.
+\begin{enumerate}
+    \item Dibujamos los dos vectores $\vu$ y $\vv$ con el mismo origen.
+
+    \item Completamos un paralelogramo trazando:
+        \begin{itemize}
+            \item Por el extremo del vector $\vu$, un segmento de recta paralelo al vector $\vv$.
+
+            \item Por el extremo del vector $\vv$, un segmento de recta paralelo al vector $\vu$.
+        \end{itemize}
+
+    \item La suma de los dos vectores es la diagonal orientada del paralelogramo obtenido, que tiene su origen en el origen compartido de los vectores $\vu$ y $\vv$ (\figura{4.14} y \figura{4.15}).
+\end{enumerate}
+
+\noindent
+\begin{minipage}[b]{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\linewidth]{Imagenes/U4/fig14.png}
+        \caption{}
+        \label{fig:4.14}
+    \end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\linewidth]{Imagenes/U4/fig15.png}
+        \caption{}
+        \label{fig:4.15}
+    \end{figure}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{Regla de la poligonal}
+
+Conviene utilizarla cuando se suman más de dos vectores:
+\begin{enumerate}
+    \item A partir de un punto, se traza un vector paralelo a uno de los dados, por ejemplo, paralelo al vector $\vu$, con igual módulo y sentido que él, al que llamamos $\vu'$.
+    
+    \item Por el extremo de $\vu'$, trazamos un vector paralelo a $\vec{x}$, $\vec{x}'$ también con igual módulo y sentido.
+    
+    \item Se trabaja de igual manera con todos los otros vectores, trazando vectores equipolentes a los dados, uno a continuación del otro.
+    
+    \item El vector suma se obtiene uniendo el origen del primer vector con el extremo del último vector.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig16.png}
+    \caption{}
+    \label{fig:4.16}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Diferencia de vectores}
+
+La resta o diferencia entre dos vectores $\vu$ y $\vv$ se expresa como $\vu - \vv$ y se define como la suma del primero de ellos con el opuesto del segundo, es decir: $\vu - \vv = \vu + (-\vv)$.
+
+Para representar gráficamente la diferencia $\vu - \vv$ podemos colocar a $-\vv$ a continuación de $\vu$ y unir el origen de $\vu$ con el extremo de $-\vv$, como lo indica la \figura{4.17}:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig17.png}
+    \caption{}
+    \label{fig:4.17}
+\end{figure}
+Usando la regla del paralelogramo, también se puede restar vectores:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\linewidth]{Imagenes/U4/fig18.png}
+    \caption{}
+    \label{fig:4.18}
+\end{figure}
+
+\begin{tcolorbox}[colframe= black, boxrule=0.8pt, sharp corners]
+    Por lo tanto, el vector \Emph{suma} de dos vectores coincide con una de las diagonales del paralelogramo, la otra diagonal representa la \Emph{resta} de dichos vectores.
+\end{tcolorbox}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Imagenes/U4/fig19.png}
+    \caption{}
+    \label{fig:4.19}
+\end{figure}
+
+Para efectuar sumas o restas de tres o más vectores, el proceso es idéntico. Basta con aplicar la propiedad asociativa.
+
+Al vector que se obtiene al sumar o restar varios vectores se le denomina \Emph{resultante}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Expresión analítica de la suma y resta de vectores}
+
+Dados los vectores $\vu = (x_1, y_1), \vv = (x_2, y_2) \in\RR^2$, se definen la suma y la resta entre los vectores $\vu$ y $\vv$ a los vectores:
+    \begin{align*}
+        \vu + \vv &= (x_1, y_1) + (x_2, y_2) = (x_1 + x_2,\ y_1 + y_2) \\
+        \vu - \vv &= (x_1, y_1) - (x_2, y_2) = (x_1 - x_2,\ y_1 - y_2)
+    \end{align*}
+De manera similar, se definen estas operaciones en el espacio tridimensional. Sean $\vu = (x_1, y_1, z_1), \vv = (x_2, y_2, z_2) \in\RR^3$:
+    \begin{align*}
+        \vu + \vv &= (x_1, y_1, z_1) + (x_2, y_2, z_2) = (x_1 + x_2,\ y_1 + y_2,\ z_1 + z_2)\\
+        \vu - \vv &= (x_1, y_1, z_1) - (x_2, y_2, z_2) = (x_1 - x_2,\ y_1 - y_2,\ z_1 - z_2)
+    \end{align*}
+\begin{tcolorbox}[colframe= black, boxrule=0.8pt, sharp corners]
+    La suma (resta) de dos vectores es otro vector cuyas componentes es la suma (resta) de sus componentes homólogas.
+\end{tcolorbox}
+
+\begin{ejemplo}
+    Sean los vectores $\vu = (-2,3)$ y $\vv = (1,2)$, entonces:
+        \begin{align*}
+            \vu +\vv &= (-2,3) + (1,2) = (-2+1,\ 3+2) = (-1, 5) \\
+            \vu -\vv &= (-2,3) - (1,2) = (-2-1,\ 3-2) = (-3, 1)
+        \end{align*}
+    Gráficamente, esto es:
+    
+    \noindent
+    \begin{minipage}[b]{0.45\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig20.png}
+        \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\linewidth]{Imagenes/U4/fig21.png}
+        \end{figure}
+    \end{minipage}
+\end{ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Propiedades}
+
+Sean los vectores $\vec{v_1}, \vec{v_2}, \vec{v_3} \in\VV$, siendo $\VV$ el conjunto de todos los vectores libres, y sea $+$ una operación que llamaremos \Emph{suma algebraica de vectores}, entonces, se verifica que:
+\begin{enumerate}
+    \item \Emph{Ley de composición interna:} $\forall\ \vec{v_1}, \vec{v_2} \in\VV: \vec{v_1} + \vec{v_2} \in\VV$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.2\linewidth]{Imagenes/U4/fig22.png}
+        \caption{}
+        \label{fig:4.22}
+    \end{figure}
+
+    \item \Emph{Propiedad asociativa:} $\forall\ \vec{v_1}, \vec{v_2}, \vec{v_3} \in\VV: \vec{v_1} + (\vec{v_2} + \vec{v_3}) = (\vec{v_1} + \vec{v_2}) + \vec{v_3}$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig23.png}
+        \caption{}
+        \label{fig:4.23}
+    \end{figure}
+
+    \item \Emph{Existencia del elemento neutro:} $\exists\ \vec{0}\in\VV\ /\ \forall\ \vv\in\VV: \vv + \vec{0} = \vv$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.15\linewidth]{Imagenes/U4/fig24.png}
+        \caption{}
+        \label{fig:4.24}
+    \end{figure}
+
+    \item \Emph{Existencia del elemento simétrico u opuesto:} $\forall\ \vv\in\VV: \exists\ (-\vv)\in\VV\ /\ \vv + (-\vv) = \vec{0}$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.15\linewidth]{Imagenes/U4/fig25.png}
+        \caption{}
+        \label{fig:4.25}
+    \end{figure}
+    
+    \item \Emph{Propiedad conmutativa}: $\forall\ \vec{v_1}, \vec{v_2} \in\VV: \vec{v_1} + \vec{v_2} = \vec{v_2} + \vec{v_1}$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig26.png}
+        \caption{}
+        \label{fig:4.26}
+    \end{figure}
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Producto de un escalar por un vector}
+
+\noindent
+\begin{minipage}[t]{0.6\textwidth}
+    Se define el producto de un número real $k$ por un vector $\vec{u}$ como el vector que tiene:
+    \begin{enumerate}
+        \item \Emph{Dirección:} la misma que $\vec{u}$
+        
+        \item \Emph{Sentido:} el mismo que $\vec{u}$, si $k$ es positivo y opuesto al de $\vec{u}$, si $k$ es negativo. (\figura{4.27})
+        
+        \item \Emph{Módulo:} el módulo es el valor absoluto de $k$ multiplicado por el módulo de $\vec{u}$. Es decir:
+            \begin{equation*}
+                |k \vec{u}| = |k| . |\vec{u}|
+            \end{equation*}
+    \end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+    \vspace{-.7cm}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Imagenes/U4/fig27.png}
+        \caption{}
+        \label{fig:4.27}
+    \end{figure}
+\end{minipage}
+\vspace{0.2cm}
+
+Sean $\vv\in\VV$, un vector libre y $k\in\RR$ un escalar, se distinguen los siguientes casos del producto de un escalar por un vector:
+\begin{enumerate}[label=(\roman*)]
+    \item $k>1:$ En este caso, el producto $k\cdot\vv$ es un vector con el mismo sentido y dirección que $\vv$ pero de módulo mayor que $\vv$.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.25\linewidth]{Imagenes/U4/fig28.png}
+        \caption{}
+        \label{fig:4.28}
+    \end{figure}
+
+    \item $k<-1:$ En este caso, el producto $k\cdot\vv$ es un vector con la misma dirección que $\vv$ pero de sentido opuesto a $\vv$ y de módulo mayor que el mismo.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.25\linewidth]{Imagenes/U4/fig29.png}
+        \caption{}
+        \label{fig:4.29}
+    \end{figure} 
+
+    \item $-1<k<1:$ En este caso, el producto $k\cdot\vv$ es un vector con la misma dirección que $\vv$ pero su módulo es menor que $\vv$ y su sentido dependerá del signo de $k$, como se vio en los dos casos anteriores.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig30.png}
+        \caption{}
+        \label{fig:4.30}
+    \end{figure}
+
+    \item $k=0:$ En este caso, el producto $k\cdot\vv$ se reduce al vector nulo. Es decir: $k\cdot\vv = \vec{0}$
+\end{enumerate}
+
+En resumen, multiplicar un vector por un número real $k$ equivale a alargar (o encoger) su módulo tantas veces como indica el valor absoluto de $k$, e invertir su sentido si $k$ es negativo. El número real $k$ por el que se multiplica un vector recibe el nombre de \Emph{escalar}.
+
+\begin{tcolorbox}[colframe= black, boxrule=0.8pt, sharp corners]
+    Dos \Emph{vectores} son \Emph{paralelos} si, y solo si, son múltiplos escalares uno del otro.    
+\end{tcolorbox}
+
+Analíticamente, si $k \in \RR$ y $\vv = (x, y) \in \RR^2$, el producto escalar vector se define de la siguiente manera:
+    \begin{equation*}
+        k\cdot\vv = (kx,\ ky)
+    \end{equation*}
+Es decir, cada componente del vector $\vv$ queda multiplicada por el escalar $k$. Análogamente en $\RR^3$:
+\begin{equation*}
+    k\cdot\vv = (x, y, z) = (kx,\ ky,\ kz)
+\end{equation*}
+
+\begin{ejemplo}
+    \begin{minipage}[t]{0.6\textwidth}
+        Sean los vectores $\vv = (2,1),\ \vu = (2,2)\in\RR^2$, sean $k_1 = 2$ y $k_2 = -1$. Entonces:
+            \begin{align*}
+                \\
+                k_1\cdot\vv &= 2\cdot(2, 1) = (4,2) \\
+                \\
+                k_2\cdot\vu &= (-1)\cdot(2, 2) = (-2,-2)
+            \end{align*}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.35\textwidth}
+        \vspace{-1cm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=.8\linewidth]{Imagenes/U4/fig31.png}
+            \caption{}
+            \label{fig:4.31}
+        \end{figure}
+    \end{minipage}
+\end{ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Propiedades}
+
+\begin{enumerate}
+    \item \Emph{Ley de composición externa:} $\forall\ k \in\RR, \forall\ \vv \in\VV: k \cdot \vv \in\VV$
+    
+    \item \Emph{Propiedad asociativa mixta:} $\forall\ k_1, k_2 \in\RR, \forall\ \vv \in\VV: (k_1\ k_2) \cdot \vv = k_1 (k_2\cdot \vv)$
+    
+    \item \Emph{Propiedad distributiva del producto de un vector respecto a la suma de escalares:}\\
+    $\forall\ k_1, k_2 \in \RR, \forall\ \vv \in\VV: (k_1 + k_2) \cdot \vv = k_1\cdot \vv + k_2\cdot \vv$
+    
+    \item \Emph{Propiedad distributiva del producto de un escalar respecto a la suma de vectores:} \\
+    $\forall\ k \in \RR, \forall\ \vec{v_1}, \vec{v_2} \in \VV: k \cdot (\vec{v_1} + \vec{v_2}) = k\cdot \vec{v_1} + k\cdot \vec{v_2}$
+    
+    \item \Emph{El elemento neutro para el producto de un escalar por un vector:}\\ 
+    $\exists\ 1 \in \RR\ /\ \forall\ \vv \in\VV: 1 \cdot \vv = \vv$
+\end{enumerate}
+
+Por las propiedades de la suma de vectores y el producto escalar vector, se tiene que la cuaterna $(\VV, +, \RR, \cdot)$ es un \Emph{espacio vectorial}. De esta manera $(\RR^2, +, \RR, \cdot)$ y $(\RR^3, +, \RR, .)$ son
+espacios vectoriales reales.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Vector determinado por dos puntos}
+
+\subsubsection* {En $\RR^2$}
+Los puntos $A(x_1, y_1)$  y  $B(x_2, y_2)$, determinan los vectores $\vec{OA}, \vec{OB}$ y $\vec{AB}$. Por la suma y resta de vectores es:
+
+\noindent
+\begin{minipage}[t]{0.6\textwidth}
+        \begin{equation*}
+            \vec{OA} + \vec{AB} = \vec{OB} \iff \vec{AB} = \vec{OB} - \vec{OA}
+        \end{equation*}    
+    Reemplazando por las componentes de los vectores:
+        \begin{equation*}
+            \vec{AB} = (x_2, y_2) - (x_1, y_1)
+        \end{equation*}
+    Por definición de resta de vectores,
+    tenemos:
+        \begin{equation*}
+            \vec{AB} = (x_2 - x_1,\ y_2 - y_1)
+        \end{equation*}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+    \vspace{-1cm}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Imagenes/U4/fig32.png}
+        \caption{}
+        \label{fig:4.32}
+    \end{figure}
+\end{minipage}
+\vspace{0.2cm}
+
+\noindent El módulo de este vector será: $|\vec{AB}| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.
+
+\begin{tcolorbox}[colframe= black, boxrule=0.8pt, sharp corners]
+    Esta fórmula también define la distancia entre dos puntos del plano, es decir, distancia entre $A$ y $B$:
+        \begin{equation*}
+            d(A,B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+        \end{equation*}
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{En $\RR^3$}
+
+Si trabajamos de igual forma que en el plano, tendremos que las componentes de un vector determinado por dos puntos son:
+    \begin{equation*}
+        \vec{AB} = (x_2 - x_1,\ y_2 - y_1,\ z_2 - z_1)
+    \end{equation*}
+Siendo el módulo de dicho vector: $|\vec{AB}| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$.
+
+\begin{tcolorbox}[colframe= black, boxrule=0.8pt, sharp corners]
+    Al calcular el módulo del vector determinado por $\vec{A}$ y $\vec{B}$, estamos calculando la longitud del segmento $\overline{AB}$ y la distancia entre dos puntos en el espacio $A$ y $B$:
+        \begin{equation*}
+            d(A, B) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
+        \end{equation*}
+\end{tcolorbox}
+
+\noindent
+\begin{minipage}[b]{0.45\textwidth}
+    \vspace{-.3cm}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.9\linewidth]{Imagenes/U4/fig33.png}
+        \caption{}
+        \label{fig:4.33}
+    \end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+    \vspace{-.4cm}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.8\linewidth]{Imagenes/U4/fig34.png}
+        \caption{}
+        \label{fig:4.34}
+    \end{figure}
+\end{minipage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Coordenadas del punto medio de un segmento}
+
+Consideramos dos puntos sobre un vector $\vec{P_1 P_2}$, siendo $P_1(x_1, y_1)$ y $P_2(x_2, y_2)$. El punto medio del segmento $\vec{P_1P_2}$ es $P_m(x_m, y_m)$, por lo tanto, se deduce que: $\overline{P_1 P_m} = \overline{P_m P_2}$.
+
+\noindent
+\begin{minipage}[t]{0.35\textwidth}
+    \vspace{-.3cm}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Imagenes/U4/fig35.png}
+        \caption{}
+        \label{fig:4.35}
+    \end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.6\textwidth}
+        \begin{align*}
+            &\implies \begin{cases}
+                x_m - x_1 = x_2 - x_m \\
+                y_m - y_1 = y_2 - y_m
+            \end{cases} \\
+            &\implies \begin{cases}
+                2x_m = x_2 + x_1 \iff x_m = (x_2 + x_1)/2\\
+                2y_m =\, y_2 + y_1 \iff y_m =\ (y_2 + y_1)/2
+            \end{cases}
+        \end{align*}
+    Y por lo tanto:
+        \begin{equation*}
+            P_m = (x_m, y_m) = \left(\frac{x_1 + x_2}{2},\ \frac{y_1 + y_2}{2}\right)
+        \end{equation*}
+\end{minipage}
+
+\begin{ejemplo}
+    \noindent
+    \begin{minipage}[t]{0.6\textwidth}
+        Determinar el punto medio del segmento de extremos $P_1(1, 2)$ y $P_2(7, 6)$.
+        \vspace{.5cm}
+            \begin{equation*}
+                \begin{rcases}
+                    x_m &= \dfrac{1+7}{2} = 4 \\
+                    \\
+                    y_m &= \dfrac{2+6}{2} = 4
+                \end{rcases}
+                P(4, 4)
+            \end{equation*}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.35\textwidth}
+        \vspace{-1cm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=.9\linewidth]{Imagenes/U4/fig36.png}
+            \caption{}
+            \label{fig:4.36}
+        \end{figure}
+    \end{minipage}
+    \vspace{0.2cm}
+\end{ejemplo}
+
+En el espacio tridimensional, las coordenadas del \Emph{punto medio del segmento} que une los puntos $P_1(x_1, y_1, z_1)$ y $P_2(x_2, y_2, z_2)$ son:
+    \begin{equation*}
+        P_m = (x_m, y_m, z_m) = \left(\frac{x_1 + x_2}{2},\ \frac{y_1 + y_2}{2},\ \frac{z_1 + z_2}{2}\right)
+    \end{equation*}
+
+\begin{preguntabox}[Resolver:]
+    Dados los puntos $A$ y $B$, hallar las coordenadas del punto $C$ de manera que $B$ sea el punto medio del segmento $\overline{AC}$:
+    \begin{enumerate}
+        \item $A(1,1)$ y $B(2; 2,5)$
+        \item $A(1, -2)$ y $B(3, -3)$
+    \end{enumerate}
+\end{preguntabox}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Combinación lineal}
+
+Dado un conjunto $A = \{\vec{v_1}, \vec{v_2}, \dots, \vec{v_n}\} \subset \VV$ y sean los escalares $k_1, k_2, \dots, k_n$, se llama \Emph{combinación lineal} (C.L.), a todo vector de la forma:
+    \begin{equation*}
+        \vv = k_1 \vec{v_1} + k_2 \vec{v_2} + k_3 \vec{v_3} + \dots + k_n \vec{v_n}
+    \end{equation*}
+Utilizando el símbolo de sumatoria, podemos escribir esta suma de la siguiente manera:
+\begin{equation*}
+    \vv = \sum_{i=1}^{n} k_i \vec{v_i} \quad\text{ con } k_i \in \RR \land \vec{v_i} \in A,\ A \subset \VV
+\end{equation*}
+Una combinación lineal de dos o más vectores es el vector que se obtiene al sumar los productos entre los vectores y escalares dados. Los escalares se denominan \Emph{coeficientes} de la combinación lineal.
+
+\begin{tcolorbox}[colframe= black, boxrule=0.8pt, sharp corners]
+    En otras palabras, diremos que un vector $\vv$ es combinación lineal de los vectores del conjunto $A$ si, y solo si, existen escalares $k_1, k_2, \dots, k_n$, tales que $\vv$ puede expresarse como
+        \begin{equation*}
+            \vv = \sum_{i=1}^{n} k_i \vec{v_i}
+        \end{equation*}
+\end{tcolorbox}
+
+\begin{ejemplo}
+    Dado el conjunto $A = \{ \vv, \vu \}$, con $\vv = (1,2), \vu = (2,1)$, y los escalares $k_1 = 3,\ k_2 = 2$, podemos expresar al vector $\vec{w} = k_1\cdot\vv + k_2\cdot\vu = 3(1,2) + 2(2,1) = (7,8)$.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig37.png}
+        \caption{}
+        \label{fig:4.37}
+    \end{figure}
+\end{ejemplo}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Dependencia e independencia lineal}
+
+\subsubsection*{Dependencia lineal}
+
+\begin{definitionbox}{Vectores Linealmente Dependientes}{4.2}
+    Un conjunto de vectores $A = \{\vv_1, \vv_2, \dots, \vv_n\} \subset \VV$ es \Emph{linealmente dependientes} (L.D.) si, y solo si, existe una combinación lineal de ellos que dé como resultado el vector nulo, sin que sean cero todos los coeficientes de la combinación lineal.
+        \begin{equation*}
+            A \text{ es L.D.} \iff \exists\ i\ /\ k_1 \vec{v_1} + k_2 \vec{v_2} + \dots + k_n \vec{v_n} = \sum_{i=1}^{n} k_i \vec{v_i} = \vec{0}\ \land\ k_i\neq0
+        \end{equation*}
+\end{definitionbox}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Propiedades de vectores L.D.}
+
+\begin{enumerate}
+    \item Si un conjunto finito y no vacío de vectores son linealmente dependientes, entonces al menos uno de ellos se puede expresar como combinación lineal de los demás.
+    
+    \begin{demostracionbox}        
+        Sea $A = \{\vec{v_1}, \vec{v_2}, \dots, \vec{v_n}\} \subset \VV$ un conjunto de vectores L.D. de $\VV$. Por definición de dependencia lineal, existen escalares $k_1, k_2, \dots, k_n$ no todos nulos tales que:        
+            \begin{equation*}
+                k_1 \vec{v_1} + k_2 \vec{v_2} + k_3 \vec{v_3} + \dots + k_n \vec{v_n} = \vec{0}
+            \end{equation*}
+        Como al menos uno de los coeficientes debe ser distinto de cero, podemos suponer, sin perder generalidad, que $k_1 \neq 0$, por lo que existe su inverso. Despejando $\vec{v_1}$:
+        
+        \begin{equation*}
+            \vec{v_1} = -\frac{k_2}{k_1}\ \vec{v_2} - \frac{k_3}{k_1}\ \vec{v_3} - \dots - \frac{k_n}{k_1}\ \vec{v_n}
+        \end{equation*}
+    \end{demostracionbox}
+
+
+    \item Si un vector de $A = \{\vec{v_1}, \vec{v_2}, \dots, \vec{v_n}\}$ es C.L. de los demás vectores de $A$, entonces los vectores de $A$ son L.D.
+    
+    \begin{demostracionbox}        
+        Suponemos que $\vec{v_1}$ es C.L. de los vectores de $A$:
+            \begin{equation*}
+                k_2 \vec{v_2} + k_3 \vec{v_3} + \dots + k_n \vec{v_n} = \vec{v_1}
+            \end{equation*}
+        Sumando a ambos miembros el opuesto del vector $\vec{v_1}$:
+            \begin{equation*}
+                -\vec{v_1} + k_2 \vec{v_2} + k_3 \vec{v_3} + \dots + k_n \vec{v_n} = \vec{0}
+            \end{equation*}        
+        Teniendo en cuenta que:
+            \begin{equation*}
+                -\vec{v_1} = (-1)\cdot\vec{v_1} \implies (-1)\cdot\vec{v_1} + k_2 \vec{v_2} + k_3 \vec{v_3} + \dots + k_n \vec{v_n} = \vec{0}
+            \end{equation*}
+        En la última igualdad, se observa que al menos existe un coeficiente distinto de cero, es decir $-1$, en consecuencia, $A$ es L.D.
+    \end{demostracionbox}
+
+    \begin{ejemplo}
+        Si al vector $\vv = 2\cdot \vec{v_1} + 3\cdot \vec{v_2} + 4\cdot \vec{v_3}$, le sumamos $(-\vec{v})$, obtenemos:
+            \begin{equation*}
+                2\cdot \vec{v_1} + 3\cdot \vec{v_2} + 4\cdot \vec{v_3} + (-1)\vec{v} = \vec{0}
+            \end{equation*}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.35\textwidth]{Imagenes/U4/fig38.png}
+            \caption{}
+            \label{fig:4.38}
+        \end{figure}        
+        Entonces, el conjunto $\{\vec{v}, \vec{v}_1, \vec{v}_2, \vec{v}_3\}$ es un conjunto de vectores linealmente dependiente.
+    \end{ejemplo}
+
+
+    \item Dos vectores del plano son linealmente dependientes sí, y sólo sí, son paralelos.
+
+
+    \item Dos vectores libres del plano $\vu = (x_1, y_1)$ y $\vv = (x_2, y_2)$ son linealmente dependientes si sus componentes son proporcionales.    
+        \begin{equation*}
+            \vu = k\cdot \vv \implies (x_1, y_1) = k\cdot(x_2, y_2) \implies \frac{x_1}{x_2} = \frac{y_1}{y_2} = k
+        \end{equation*}
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Independencia lineal}
+
+\begin{definitionbox}{Vectores Linealmente Independientes}{4.3}
+    El conjunto de vectores $A = \{\vec{v_1}, \vec{v_2}, \dots, \vec{v_n}\} \subset \VV$, es \Emph{linealmente independientes} (L.I.) si, y solo si, la única manera de obtener el vector nulo como combinación lineal de ellos, es que \Emph{todos} los coeficientes sean ceros.
+        \begin{equation*}
+            A \text{ es L.I.} \iff k_1 \vec{v_1} + k_2 \vec{v_2} + \dots + k_n \vec{v_n} = \sum_{i=1}^{n} k_i \vec{v_i} = \vec{0}\ \land\  k_i = 0,\ \forall\ i 
+        \end{equation*}
+\end{definitionbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{Propiedades de vectores L.I.}
+
+\begin{enumerate}
+    \item Un conjunto de vectores es L.I. si, y solo si, ningún vector se puede expresar como combinación lineal de los demás.
+    
+    \item Si un vector es combinación lineal de un conjunto de vectores linealmente independiente, entonces dicha combinación lineal es única.
+    
+    \item Dos vectores del plano son L.I. si, y solo si, no son paralelos.
+    
+    \item Dos vectores del plano son L.I. si, y solo si, sus componentes no son proporcionales.
+\end{enumerate}
+Para investigar la dependencia o independencia lineal de un conjunto de vectores, se propone una combinación lineal de dicho conjunto, con escalares a determinar, que sea igual al vector nulo. Si algún escalar es no nulo, el conjunto es L.D., mientras que, si todos los escalares son necesariamente nulos, el conjunto es L.I.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection*{En $\RR^2$:}
+
+\begin{itemize}
+    \item Dos vectores paralelos son L.D.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig39.png}
+            %\caption{}
+            \label{fig:4.39}
+        \end{figure}
+
+    \item Dos vectores no paralelos son L.I.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.35\linewidth]{Imagenes/U4/fig40.png}
+            %\caption{}
+            \label{fig:4.40}
+        \end{figure}
+
+    \item Tres vectores son L.D.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.4\linewidth]{Imagenes/U4/fig41.png}
+            %\caption{}
+            \label{fig:4.41}
+        \end{figure}
+\end{itemize}
+
+
+
+\subsubsection*{En $\RR^3$:}
+
+\begin{itemize}
+    \item Tres vectores no coplanares son L.I: $k_1 \vec{v_1} + k_2 \vec{v_2} + k_3 \vec{v_3} = \vec{0} \iff k_1 = k_2 = k_3 = 0$
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig42.png}
+            %\caption{}
+            \label{fig:4.42}
+        \end{figure}
+
+    \item Cuatro vectores son L.D:
+        \begin{equation*}
+            \begin{aligned}
+                \vec{v_4} = \vec{v_1} + &2\cdot \vec{v_2} + \vec{v_3} \\
+                \vec{v_1} + 2\cdot \vec{v_2} + \vec{v_3} &+ (-1)\cdot \vec{v_4} = \vec{0}
+            \end{aligned}
+        \end{equation*}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.3\linewidth]{Imagenes/U4/fig43.png}
+            %\caption{}
+            \label{fig:4.43}
+        \end{figure}
+\end{itemize}
+
+
+
+\begin{preguntabox}[Resolver:]
+    \begin{enumerate}
+        \item Si $\vu$ y $\vv$ son dos vectores que verifican $3\vu + \frac{1}{3}\vv = \vec{0}$ entonces, ¿$\vu$ y $\vv$ son linealmente dependientes o independientes? Justificar.
+
+        \item Dados los vectores $\vv = (4, 6, m)$ y $\vec{w} = (2, k, 1)$ determinar, si existen, los valores de $m$ y $k$ para que los vectores $\vv$ y $\vec{w}$ sean linealmente dependientes.
+    \end{enumerate}
+\end{preguntabox}
+
+\subsection{Guía de repaso y desarrollo teórico}
+
+A continuación, encontrarás una serie de preguntas y consignas que te ayudarán a repasar los temas principales de la unidad. Algunas te invitan a recordar definiciones o propiedades, y otras a desarrollar los conceptos en forma completa, clara y ordenada.
+
+\subsubsection*{Preguntas}
+
+\begin{enumerate}
+    \item Definir vector geométrico. Mencionar sus características y explicar brevemente cada una de ellas. Realizar un gráfico señalando los elementos que lo componen.
+    
+    \item Deducir la expresión del módulo o norma de un vector en el plano, en función de sus componentes, a partir del teorema de Pitágoras. Proponer un ejemplo.
+    
+    \item Escribir la condición analítica de igualdad entre dos vectores del espacio, expresando la relación entre sus componentes.
+    
+    \item Si dos vectores son iguales, ¿pueden tener distintos puntos de aplicación? Justificar la respuesta desde la interpretación geométrica del concepto.
+    
+    \item Si la suma de dos vectores es el vector nulo, ¿qué relación hay entre ellos? Proponer un ejemplo.
+    
+    \item Dados dos vectores del plano, escribir la expresión analítica de su suma y representarla gráficamente utilizando la regla del paralelogramo. Explicar brevemente el procedimiento realizado.
+    
+    \item Si al multiplicar un vector no nulo por un número real $k$ se obtiene otro vector con igual dirección y sentido opuesto, ¿qué puede afirmarse sobre el valor de $k$?
+    
+    \item Deducir la fórmula del vector determinado por dos puntos y, a partir de ella, la expresión de la distancia entre los puntos en el plano. Representar gráficamente la situación, identificando los elementos que intervienen en la deducción.
+    
+    \item Sean los puntos $P_1(1,a)$ y $P_2(b,6)$. Hallar las coordenadas $a$ y $b$, sabiendo que el punto medio del segmento $\overline{P_1P_2}$ es $P_m(2,1)$.
+    
+    \item ¿Cuándo es posible expresar a un vector como combinación lineal de otros?
+    
+    \item Escribir la definición coloquial y simbólica de combinación lineal de vectores. Representar gráficamente una combinación lineal de dos vectores en el plano.
+    
+    \item Sea el conjunto $A=\{\vec{u},\vec{v},\vec{w}\}$, siendo $\vec{u}=\alpha\vec{v}+\beta\vec{w}$. Determinar si el conjunto $A$ es linealmente dependiente o independiente. Justificar la elección de la respuesta.
+\end{enumerate}
