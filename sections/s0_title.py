@@ -35,7 +35,7 @@ class TitleSlide(Slide):
         
         # --- 3. Subtitles (Assignature & Professor) ---
         # PLACEHOLDER: Edit these strings manually
-        assignature_text = "Álgebra y Geometría Analítica - Cs. Económicas"
+        assignature_text = "Álgebra y Geometría Analítica - 2026"
         professor_text   = "Lic. Fernán Zabala Lodoli"
         
         assignature = Text(assignature_text, font_size=32, color=C_W)
@@ -53,7 +53,7 @@ class TitleSlide(Slide):
         
         # --- 5. Basic Animation: Vector Plots ---
         # Position below the professor text
-        vector_origin = DOWN * 1.5
+        vector_origin = DOWN * 2
         v1 = _arrow(vector_origin, vector_origin + RIGHT * 2 + UP, color=C_U)
         v2 = _arrow(vector_origin, vector_origin + LEFT + UP * 2, color=C_NEG)
         v1_lbl = MathTex(r"\vec{v}", color=C_U).next_to(v1.get_end(), UR, buff=0.1)
