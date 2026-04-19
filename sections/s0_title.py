@@ -30,31 +30,32 @@ class TitleSlide(Slide):
         
         # --- 2. Main Title (Lecture Name) ---
         # PLACEHOLDER: Edit this string manually
-        title_text = "VECTORES EN EL PLANO Y EL ESPACIO" 
+        title_text = "Vectores" 
         title = Text(title_text, font_size=48, color=C_V, weight=BOLD)
-        title.shift(UP * 1.5)
         
         # --- 3. Subtitles (Assignature & Professor) ---
         # PLACEHOLDER: Edit these strings manually
-        assignature_text = "Algebra y Geometria Analitica"
-        professor_text   = "Prof. [NOMBRE DEL PROFESOR]"
+        assignature_text = "Álgebra y Geometría Analítica - Cs. Económicas"
+        professor_text   = "Lic. Fernán Zabala Lodoli"
         
         assignature = Text(assignature_text, font_size=32, color=C_W)
-        assignature.next_to(title, DOWN, buff=0.5)
+        professor   = Text(professor_text, font_size=28, color=C_NEG)
         
-        professor = Text(professor_text, font_size=28, color=C_HL)
-        professor.next_to(assignature, DOWN, buff=0.8)
+        # Layout: Group and position at the top
+        header = VGroup(title, assignature, professor).arrange(DOWN, buff=0.4)
+        header.to_edge(UP, buff=1.0)
         
         # --- 4. Basic Animation: Title Reveal ---
-        self.play(Write(title), run_time=1.5)
-        self.play(FadeIn(assignature, shift=UP * 0.3))
-        self.play(FadeIn(professor, shift=UP * 0.3))
+        self.play(Write(title), run_time=1.2)
+        self.play(FadeIn(assignature, shift=UP * 0.2))
+        self.play(FadeIn(professor, shift=UP * 0.2))
         self.next_slide()
         
         # --- 5. Basic Animation: Vector Plots ---
-        # A couple of basic vectors as requested
-        v1 = _arrow(ORIGIN, RIGHT * 2 + UP, color=C_U)
-        v2 = _arrow(ORIGIN, LEFT + UP * 2, color=C_NEG)
+        # Position below the professor text
+        vector_origin = DOWN * 1.5
+        v1 = _arrow(vector_origin, vector_origin + RIGHT * 2 + UP, color=C_U)
+        v2 = _arrow(vector_origin, vector_origin + LEFT + UP * 2, color=C_NEG)
         v1_lbl = MathTex(r"\vec{v}", color=C_U).next_to(v1.get_end(), UR, buff=0.1)
         v2_lbl = MathTex(r"\vec{w}", color=C_NEG).next_to(v2.get_end(), UL, buff=0.1)
         
@@ -63,5 +64,6 @@ class TitleSlide(Slide):
         self.next_slide()
         
         # --- 6. Cleanup ---
-        self.play(FadeOut(title, assignature, professor, v1, v2, v1_lbl, v2_lbl))
+        # Explicitly remove the plane and all objects
+        self.play(FadeOut(*self.mobjects))
         self.next_slide()
